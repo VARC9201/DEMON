@@ -7,7 +7,7 @@ PIC = config.ALIVE_PIC
 if config.ALIVE_PIC:
     DEADLY_PIC = PIC
 else:
-    DEADLY_PIC = "https://graph.org/file/6a1fd01700685fc777d9f.mp4"
+    DEADLY_PIC = "https://graph.org/file/58fe560a47428a2a591fc.mp4"
 
 hl = config.CMD_HNDLR
 
