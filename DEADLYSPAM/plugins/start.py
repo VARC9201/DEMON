@@ -10,13 +10,13 @@ ALIVE_IMG = config.ALIVE_PIC
 if config.ALIVE_PIC:
     DEADLY_IMG = ALIVE_IMG
 else:
-    DEADLY_IMG = "https://telegra.ph/file/8626de483836d15f8f63c.jpg"
+    DEADLY_IMG = "https://graph.org/file/b8b41f64a16ce8c4657c8.jpg"
 
 OWNER_INFO = config.OWNER_NAME
 if config.OWNER_NAME:
     OWNER_NAME = OWNER_INFO
 else:
-    OWNER_NAME = "DEADLY-USER"
+    OWNER_NAME = "Dᴇᴍᴏɴ一×"
 
 OWNER_ID = config.OWNER_ID
 
@@ -24,9 +24,6 @@ Deadly_Button = [
     [
         Button.url("Cʜᴀɴɴᴇʟ", "https://t.me/+XxS3X3ayLqQ5Njdk"),
         Button.url("Sᴜᴘᴘᴏʀᴛ", "https://t.me/+dKGCo7oumwYwZDNl")
-    ],
-    [
-        Button.url("• Rᴇᴘᴏ •", "https://github.com/VARC9210/DEMON")
     ]
 ]
 
@@ -51,15 +48,15 @@ async def start(e):
         user_id = e.sender_id
         mention = f"[{name}](tg://user?id={user_id})"
         myOwner = f"[{OWNER_NAME}](tg://user?id={OWNER_ID})"
-        creator = f"[🇲 🇴 🇨 🇦](tg://user?id={5486520312})"
+        creator = f"[⏤͟͞〲Dᴇᴠɪʟ˹ᴀꜰᴋ˼🕊🥀](tg://user?id={6257927828})"
         DEADLY_ON = f"""
 ʜᴇʏ {mention},
-ᴛʜɪs ɪs ᴅᴇᴀᴅʟʏ sᴘᴀᴍʙᴏᴛ ᴘᴏᴡᴇʀᴇᴅ ʙʏ:- {creator}!
+ᴛʜɪs ɪs ᴅᴇᴍᴏɴ-ꜱᴘᴀᴍ ʙᴏᴛ ᴘᴏᴡᴇʀᴇᴅ ʙʏ 🥀 » {creator}!
 
-ᴛʜɪs ʙᴏᴛ ᴏᴡɴᴇʀ:- {myOwner}
+ᴛʜɪs ʙᴏᴛ ᴏᴡɴᴇʀ ✨ » {myOwner}
 
-ᴄᴏᴅᴇ ᴄʀᴇᴀᴛᴏʀ:- {creator}
+ᴄᴏᴅᴇ ᴄʀᴇᴀᴛᴏʀ 🫂 » {creator}
 
-ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ᴀᴄᴄᴇss sᴜᴘᴘᴏʀᴛ ,ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ʀᴇᴘᴏ!
+ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ᴀᴄᴄᴇss sᴜᴘᴘᴏʀᴛ ᴀɴᴅ ᴄʜᴀɴɴᴇʟ 💗🥀 !
     """
         await e.client.send_file(e.chat_id, DEADLY_IMG, caption=DEADLY_ON, buttons=Deadly_Button)
