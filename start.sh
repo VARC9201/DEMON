@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 app.py & python -m main.py
+python3 app.py & python3 -m Demon
