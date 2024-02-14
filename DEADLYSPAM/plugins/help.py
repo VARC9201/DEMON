@@ -27,7 +27,7 @@ DEAD_HELP += f"© @KANU_XD\n"
 
 @BOT0.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
 async def help(event):
-  if event.sender_id in SUDO_USERS:
+  if event.sender_id in SUDOERS:
      await event.client.send_file(event.chat_id,
                                   HELP_PIC,
                                   caption=DEAD_HELP,
