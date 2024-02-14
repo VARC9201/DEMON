@@ -1,50 +1,48 @@
-import logging
-from telethon import TelegramClient
+import re
+import sys
 from os import getenv
-from resources.data import DEADLYSPAM
 
+from dotenv import load_dotenv
 
-logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s', level=logging.WARNING)
+load_dotenv()
 
+API_ID = int(getenv("API_ID", ""))
+API_HASH = getenv("API_HASH")
 
-# VALUES REQUIRED FOR XBOTS
-API_ID = 18136872
-API_HASH = "312d861b78efcd1b02183b2ab52a83a4"
-CMD_HNDLR = getenv("CMD_HNDLR", default="!")
-HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
-HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
+# ADMIN DETAILS (Your ID) 
+OWNER_ID = int(getenv("OWNER_ID", ""))
 
-BOT_TOKEN = getenv("BOT_TOKEN", default=None)
-BOT_TOKEN2 = getenv("BOT_TOKEN2", default=None)
-BOT_TOKEN3 = getenv("BOT_TOKEN3", default=None)
-BOT_TOKEN4 = getenv("BOT_TOKEN4", default=None)
-BOT_TOKEN5 = getenv("BOT_TOKEN5", default=None)
-BOT_TOKEN6 = getenv("BOT_TOKEN6", default=None)
-BOT_TOKEN7 = getenv("BOT_TOKEN7", default=None)
-BOT_TOKEN8 = getenv("BOT_TOKEN8", default=None)
-BOT_TOKEN9 = getenv("BOT_TOKEN9", default=None)
-BOT_TOKEN10 = getenv("BOT_TOKEN10", default=None)
-
-SUDO_USERS = list(map(lambda x: int(x), getenv("SUDO_USERS", default="6257927828").split()))
-for x in DEADLYSPAM:
-    SUDO_USERS.append(x)
-OWNER_ID = int(getenv("OWNER_ID", default="6257927828"))
-SUDO_USERS.append(OWNER_ID)
-
-
-# ------------- CLIENTS -------------
-
-X1 = TelegramClient('ꓓⲉⲙⲟⲛ1', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
-X2 = TelegramClient('ꓓⲉⲙⲟⲛⱠ2', API_ID, API_HASH).start(bot_token=BOT_TOKEN2)
-X3 = TelegramClient('ꓓⲉⲙⲟⲛ3', API_ID, API_HASH).start(bot_token=BOT_TOKEN3)
-X4 = TelegramClient('ꓓⲉⲙⲟⲛ4', API_ID, API_HASH).start(bot_token=BOT_TOKEN4)
-X5 = TelegramClient('ꓓⲉⲙⲟⲛ5', API_ID, API_HASH).start(bot_token=BOT_TOKEN5)
-X6 = TelegramClient('ꓓⲉⲙⲟⲛ6', API_ID, API_HASH).start(bot_token=BOT_TOKEN6)
-X7 = TelegramClient('ꓓⲉⲙⲟⲛ7', API_ID, API_HASH).start(bot_token=BOT_TOKEN7)
-X8 = TelegramClient('ꓓⲉⲙⲟⲛ8', API_ID, API_HASH).start(bot_token=BOT_TOKEN8)
-X9 = TelegramClient('ꓓⲉⲙⲟⲛ9', API_ID, API_HASH).start(bot_token=BOT_TOKEN9)
-X10 = TelegramClient('ꓓⲉⲙⲟⲛ10', API_ID, API_HASH).start(bot_token=BOT_TOKEN10)
+OWNER_NAME = getenv("OWNER_NAME") 
+SUDO_USER= list(
+    map(int, getenv("SUDO_USER", "5486520312").split())
+)
+# BOT TOKEN CONFIG VARS (get all vars detail from @botfather) 
+BOT_TOKEN = getenv("BOT_TOKEN", None) 
+BOT_TOKEN2 = getenv("BOT_TOKEN2", None) 
+BOT_TOKEN3 = getenv("BOT_TOKEN3", None) 
+BOT_TOKEN4 = getenv("BOT_TOKEN4", None) 
+BOT_TOKEN5 = getenv("BOT_TOKEN5", None) 
+BOT_TOKEN6 = getenv("BOT_TOKEN6", None) 
+BOT_TOKEN7 = getenv("BOT_TOKEN7", None) 
+BOT_TOKEN8 = getenv("BOT_TOKEN8", None) 
+BOT_TOKEN9 = getenv("BOT_TOKEN9", None) 
+BOT_TOKEN10 = getenv("BOT_TOKEN10", None) 
 
 
 # EXTRA VARS
 ALIVE_PIC = getenv("ALIVE_PIC") 
+CMD_HNDLR = getenv("CMD_HNDLR") 
+
+
+
+
+
+
+
+LUND = list(
+    map(int, getenv("LUND", "123456789").split())
+)
+
+CHUT = list(
+    map(int, getenv("CHUT", "1234576789").split())
+)
