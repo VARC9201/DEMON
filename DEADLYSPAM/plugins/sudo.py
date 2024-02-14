@@ -3,7 +3,6 @@ import asyncio
 import sys
 import git
 import config
-# Changed root to DEADLYSPAM
 from DEADLYSPAM import BOT0, SUDOERS, CHUT
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon import events, version
