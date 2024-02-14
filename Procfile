@@ -1,1 +1,1 @@
-worker: python3 -m DEADLYSPM
+worker: python3 -m DEADLYSPAM
