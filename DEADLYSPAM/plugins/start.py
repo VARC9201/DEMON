@@ -21,7 +21,6 @@ else:
 OWNER_ID = config.OWNER_ID
 
 Deadly_Button = [
-Deadly_Button = [
     [
         Button.url("Cʜᴀɴɴᴇʟ", "https://t.me/+XxS3X3ayLqQ5Njdk"),
         Button.url("Sᴜᴘᴘᴏʀᴛ", "https://t.me/+dKGCo7oumwYwZDNl")
