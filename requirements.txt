@@ -1,0 +1,11 @@
+requests
+python-dotenv
+python-decouple
+Telethon
+cryptg
+gitpython
+asyncio
+heroku3
+flask
+flask_restful
+gunicorn
