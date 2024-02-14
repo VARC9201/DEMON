@@ -1,1 +1,1 @@
-worker: python3 -m Demon
+worker: python3 -m DEADLYSPM
