@@ -10,7 +10,7 @@ ALIVE_IMG = config.ALIVE_PIC
 if config.ALIVE_PIC:
     DEADLY_IMG = ALIVE_IMG
 else:
-    DEADLY_IMG = "https://graph.org/file/b8b41f64a16ce8c4657c8.jpg"
+    DEADLY_IMG = "https://graph.org/file/77de88493c174483c9988.mp4"
 
 OWNER_INFO = config.OWNER_NAME
 if config.OWNER_NAME:
