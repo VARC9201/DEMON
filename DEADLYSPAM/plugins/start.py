@@ -52,7 +52,7 @@ async def start(e):
         DEADLY_ON = f"""
 ʜᴇʏ {mention},
 
-ᴛʜɪs ɪs ᴅᴇᴍᴏɴ-ꜱᴘᴀᴍ ʙᴏᴛ ᴘᴏᴡᴇʀᴇᴅ ʙʏ 🥀 » {creator}!
+ᴛʜɪs ɪs ᴅᴇᴍᴏɴ-ꜱᴘᴀᴍ ʙᴏᴛ 🥀
 
 ᴛʜɪs ʙᴏᴛ ᴏᴡɴᴇʀ ✨ » {myOwner}
 
