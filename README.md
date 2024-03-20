@@ -4,3 +4,9 @@
 
 
 Copyright (c) 2024 ᴋᴜɴᴀʟ [AFK]
+
+
+
+
+
+## SPAM BOT REPO IS REDIRECTED TO STORM BOT SPAM
